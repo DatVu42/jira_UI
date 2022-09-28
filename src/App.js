@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './component/Home/Header/Header';
 import Home from './page/Home/Home';
-import { LoginTemplate } from './templates/HomeTemplate/LoginTemplate';
+import { UserLoginTemplate } from './templates/HomeTemplate/UserLoginTemplate';
+import LoginCyberBugs from './page/LoginCyberBugs/LoginCyberBugs';
+
 
 
 
@@ -11,7 +12,8 @@ function App() {
       <Switch>
         <Route exact path='/home' Component={Home} />
         <Route exact path='/' Component={Home} />
-        <LoginTemplate exact path="/header" Component={Header} />
+        
+        <UserLoginTemplate exact path="/login" Component={LoginCyberBugs} />
       </Switch>
     </BrowserRouter>
   );
