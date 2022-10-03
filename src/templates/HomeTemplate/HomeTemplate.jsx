@@ -8,7 +8,7 @@ export const HomeTemplate = (props) =>{
     const {Component,...restParam} = props;
     return <Route {...restParam} render ={(propsRoute) => { 
         return <>
-            {/* <Header/> */}
+            <Header/>
             <Component {...propsRoute}/>
         </>
      }} 
